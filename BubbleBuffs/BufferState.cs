@@ -105,10 +105,10 @@ namespace BubbleBuffs {
             //}
 
             var list = new List<BubbleBuff>(BuffsByKey.Values);
-            //list.Sort((a, b) => {
-            //    return a.Name.CompareTo(b.Name);
-            //});
-            //Main.Log("Sorting buffs");
+            list.Sort((a, b) => {
+                return a.Name.CompareTo(b.Name);
+            });
+            Main.Log("Sorting buffs");
             BuffList = list;
 
             foreach (var buff in BuffList) {
